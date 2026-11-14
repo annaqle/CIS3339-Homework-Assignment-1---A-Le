@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "postinstall": "npm install --prefix backend",
+    "postinstall": "cd backend && npm install && cd ../frontend && npm install",
+    "build": "npm run build --prefix frontend",
     "start": "node backend/server.js"
   }
 }
